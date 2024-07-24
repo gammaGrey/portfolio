@@ -1,0 +1,44 @@
+#title {
+  color: var(--color3);
+}
+
+#aside {
+  font-size: .75rem;
+}
+
+#thisSite {
+  color: var(--color3);
+}
+
+#externalLink {
+  max-width: .75rem;
+  max-height: .75rem;
+  padding-left: .25rem;
+  opacity: 75%;
+}
+
+#mainGrid {
+  display: grid;
+  grid-template: 1fr / 45rem;
+  gap: 2rem;
+  justify-content: center;
+  
+  padding: 1.5rem 0;
+  margin: -1rem auto 0;
+  
+  max-width: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #mainGrid {
+    grid-template: 1fr / 68%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #mainGrid {
+    grid-template: 1fr / 90%;
+    max-width: 100%;
+  }
+}

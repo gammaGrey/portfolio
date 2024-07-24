@@ -1,0 +1,29 @@
+.navButton {
+  border-radius: .33rem;
+  background-color: var(--color2);
+  text-decoration: none;
+  padding: .25rem;
+  color: var(--color1);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.083s 0s linear;
+
+  &:hover,
+  &.active {
+    background-color: var(--color3);
+    color: var(--color2);
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navButton {
+      font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+  .navButton {
+    font-size: 1rem;
+  }
+}

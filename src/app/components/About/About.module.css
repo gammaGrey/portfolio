@@ -1,0 +1,79 @@
+#contentWrapper {
+  margin: 0 auto;
+  width: 45rem;
+  color: var(--color3);
+
+  h2 {
+    padding: 1rem 0;
+    font-size: 1.25rem
+  }
+  line-height: 1.5;
+}
+
+#intro {
+  padding-top: 1rem;
+}
+
+#certified {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: #b43000;
+  }
+}
+
+#listBox ul {
+  padding-left: 1rem;
+}
+
+.nestedList {
+  padding-left: 1.25rem;
+  font-size: .8rem;
+  font-style: italic;
+  letter-spacing: .03125rem;
+}
+
+#contactList {
+  list-style: none;
+
+  & a {
+    color: blue;
+    text-decoration: none;
+
+    &:hover {
+      color: #b43000;
+    }
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  #listBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #listBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #contentWrapper {
+    margin: 0 auto;
+    width: 68%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #contentWrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

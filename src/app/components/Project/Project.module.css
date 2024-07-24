@@ -1,0 +1,72 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: var(--color2);
+  background-color: hsl(224, 25%, 27%);
+  border-radius: .25rem;
+  padding: .25rem;
+}
+
+.projectHeader {
+  padding-left: 2.5%;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5rem .25rem;
+  gap: .25rem;
+  border-radius: .5rem;
+}
+
+.projectScreenshot {
+  max-width: 95%;
+  border: .25rem solid #5c7292;
+  border-radius: .25rem;
+}
+
+.descriptionContainer {
+  padding-top: .25rem;
+  max-width: 95%;
+
+  & p {
+    padding-bottom: .5rem;
+  }
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-around;
+  
+  & a {
+    text-decoration: none;
+  }
+}
+
+.buttons {
+  width: 10%;
+  padding: 0 .125rem .25rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-weight: 600;
+  font-variant: small-caps;
+  color: white;
+
+  background-color: #5c7292bb;
+  border: .1875rem solid #5c729200;
+  border-radius: .1875rem;
+  gap: .25rem;
+
+  &:hover {
+    background-color: #5c729288;
+    border-color:#5c7292;
+    cursor: pointer;
+  }
+}

@@ -1,11 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from "react-redux";
+import { navSelector } from "./app/features/navigation/navigationSlice";
+import About from "./app/components/About/About";
+import ProjectPage from './app/components/ProjectPage/ProjectPage';
+import Header from "./app/presentational/Header";
+import "./App.css"
 
-function App() {
+export default function App () {
+  const { page } = useSelector(navSelector);
+
   return (
-    <div className="App">
-    </div>
+    <>
+      <Header />
+      { page === "Projects"
+        ? <ProjectPage />
+        : <About /> }
+    </>
   );
-}
-
-export default App;
+};

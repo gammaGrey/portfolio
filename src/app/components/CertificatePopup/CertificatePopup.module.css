@@ -1,0 +1,75 @@
+#hidden {
+  display: none;
+}
+
+#popup {
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  width: 45rem;
+  height: fit-content;
+  border: solid .25rem #fffaf2;
+  border-radius: .25rem;
+  background-color: #fffaf2;
+  box-shadow: 2px 5px 10px -2px #333333;
+
+  & img {
+    border-radius: .375rem;
+  }
+}
+
+button {
+  all: unset;
+}
+
+#close {
+  position: relative;
+  left: calc(100% - 1.25rem);
+  width: .75rem;
+  height: .75rem;
+  padding: .125rem;
+  border: .125rem outset #6d2d16;
+  border-radius: .325rem;
+  background-color: #ee4408;
+  z-index: 2;
+  cursor: pointer;
+
+  &:active {
+    border-style: inset;
+    background-color: #da3e06;
+  }
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.linkButton {
+  margin: .125rem;
+  padding: .15rem;
+  border: .125rem solid #1d2e4c;
+  border-radius: .2rem;
+  text-decoration: none;
+  color: #1d2e4c;
+
+  &:hover {
+    margin: 0;
+    border-width: .25rem;
+    background-color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #popup {
+    width: 68%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #popup {
+    width: 90%;
+  }
+}
