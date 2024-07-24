@@ -1,0 +1,15 @@
+{
+  "short_name": "gammaGrey",
+  "name": "Portfolio and Homepage for Tom Juzonis",
+  "icons": [
+    {
+      "src": "tom-icon.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3f4a69",
+  "background_color": "#f9f2ec"
+}
